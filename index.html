@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>NASSA’s open library of archaeological ABM modules: overview and examples</title>
+
+		<meta name="description" content="Made with Reveal.JS, A framework for easily creating beautiful presentations using HTML, by Hakim El Hattab">
+		<meta name="author" content="Andreas Angourakis">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="reveal.js-master/dist/reset.css">
+		<link rel="stylesheet" href="reveal.js-master/dist/reveal.css">
+		<link rel="stylesheet" href="reveal.js-master/dist/theme/league.css" id="theme">
+		
+		<!-- Custom modifications to structure slides -->
+		<link rel="stylesheet" href="myMods.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="reveal.js-master/plugin/highlight/zenburn.css" id="highlight-theme">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+
+	<body>
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+            	<section data-state="title-page">
+					<h3>NASSA’s open library<br>of archaeological ABM modules</h3>
+					<h4>overview and examples</h4>
+					
+					<div style="font-size: 50%">available at 
+						<a href="https://andros-spica.github.io/CAA-DE-NL-FL-Angourakis-et-al-2022/" target="_blank">https://andros-spica.github.io/CAA-DE-NL-FL-Angourakis-et-al-2022/</a>
+						<br>
+						<a href="https://andros-spica.github.io/CAA-DE-NL-FL-Angourakis-et-al-2022/index.html?print-pdf" target="_blank">https://andros-spica.github.io/CAA-DE-NL-FL-Angourakis-et-al-2022/index.html?print-pdf</a> (printable version)</div>
+
+					<div id="left50">
+						<img src="images/NASSA-logo.png" alt="Logos" 
+						style="width: 400px; border: none; box-shadow: none;"/>
+					</div>
+					<div id="right50" style="font-size: 50%;">
+						<br>
+						<br>
+						<table>
+							<tr>
+								<td style="text-align: right; border: none;">
+									<a href="https://reform.ressourcencampus-bochum.de/en/the-people-behind-reform/" target="_blank">Andreas <b>Angourakis</b></a>
+								</td>
+								<td style="text-align: left; border: none;">
+									<a href="https://twitter.com/AndrosSpica" target="_blank">@AndrosSpica</a>
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: right; border: none;">
+									<a href="https://www.driesdaems.com/" target="_blank">Dries <b>Daems</b></a>
+								</td>
+								<td style="text-align: left; border: none;">
+									<a href="https://twitter.com/DriesDaems" target="_blank">@DriesDaems</a>
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: right; border: none;">
+									<a href="https://research.vu.nl/en/persons/philip-verhagen" target="_blank">Philip <b>Verhagen</b></a>
+								</td>
+								<td style="text-align: left; border: none;">
+									<a href="https://twitter.com/jwhpverhagen" target="_blank">@jwhpverhagen</a>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</section>
+				
+				<section>
+					<h4>Network for Agent-based modelling of<br>Socio-ecological systems in Archaeology</h4>
+					<div id="left70">
+						<i style="color:darkcyan; font-size: 66%;">Scientific Research Network (WOG) - FWO, 2020-2025</i>
+						<br>
+						<lu style="font-size: 66%;">
+							NASSA missions:
+							<li>Create and maintain an open library of modular components for agent-based modelling (ABM) in archaeology</li>
+							<li>Improve reproducibility and re-usability in the field</li>
+							<li>Smooth communication with archaeologists (and beyond)</li>
+							<li>Facilitate learning processes of next generations</li>
+						</lu>
+					</div>
+					<div id="right30">
+						<img src="images/NASSA-logo_cropped.png" alt="Logos" style="width: 400px; border: none; box-shadow: none;"/>
+					</div>
+				</section>
+
+				<section>
+					Infraestructure
+					<ul style="font-size: 66%;">
+						<li>NASSA GitHub organization: <a href="https://github.com/Archaeology-ABM" target="_blank">https://github.com/Archaeology-ABM</a></li>
+						<li>NASSA overview: <a href="https://archaeology-abm.github.io/NASA" target="_blank">https://archaeology-abm.github.io/NASA</a></li>
+						<li>Library repository: <a href="https://github.com/Archaeology-ABM/NASSA-modules" target="_blank">https://github.com/Archaeology-ABM/NASSA-modules</a></li>
+						<li>Library Web interface: <a href="https://archaeology-abm.github.io/NASSA-modules" target="_blank">https://archaeology-abm.github.io/NASSA-modules</a></li>
+						<li>For registered members: mailing list, Google Drive, Slack</li>
+					</ul>
+					<br><br>
+					<div id="left50" style="text-align:center;">
+						Action fronts
+						<ul style="font-size: 66%;">
+							<li>Library infraestructure</li>
+							<li>Module submissions</li>
+							<li>Module curation</li>
+							<li>Promotion</li>
+						</ul>
+					</div>
+					<div id="right50" style="text-align:center;">
+						Contact<br>Dries Daems<br>to join us!
+					</div>
+				</section>
+
+				<section>
+					<h3>NASSA's Library | <i style="color:darkcyan">Concept</i></h3>
+					<div id="left50">
+						<ul style="font-size: 66%;">
+							<li>Collection of modules, not models</li>
+							<li>Enforcing common but flexible standards</li>
+							<li>Aimed at all levels of model developers</li>
+							<li>Primarily oriented to archaeology<br>(interdisciplinary, but usable by archaeologists)</li>
+							<li>Substantially different from other open science initiatives (e.g. CoMSES)</li>
+						</ul>
+					</div>
+					<div id="right50">
+						<img src="https://c.pxhere.com/photos/89/e6/lego_legoland_legostadt_building_blocks_legos_out_of_legos_children_toys-1119115.jpg!d" srcset="https://c.pxhere.com/photos/89/e6/lego_legoland_legostadt_building_blocks_legos_out_of_legos_children_toys-1119115.jpg!d" alt="play, toy, children, toys, lego, replica, figures, module, legoland, lego blocks, building blocks, legos, mini world, legomaennchen, legostadt, legotage, out of legos, Free Images In PxHere">
+					</div>
+				</section>
+
+				<section>
+					<h3>An open source ecosystem</h3>
+					<img src="images/NASSA-ecosystem.png" alt="NASSA ecosystem" style="width: 550px; border: none; box-shadow: none;"/>
+				</section>
+
+				<section>
+					<h3>Module submission | <i style="color:darkcyan">"Gist"</i></h3>
+					<ul>
+						<li>
+							Procedure still to be formalised, so for now there are only a few practical steps are required
+						</li>
+						<li>
+							Minimal knowledge of Git and GitHub is welcomed but not necessary
+						</li>
+						<li>
+							Submissions are reviewed by NASSA members to comply with NASSA schema and minimal standards (no gate-keeping!)
+						</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h3>Module submission | <i style="color:darkcyan">Code</i></h3>
+					Prepare the module code keeping in mind <strong>reproducibility</strong> and <strong>re-usability</strong>
+					<ul style="font-size: 80%;">
+						<li>Naming clarity</li>
+						<li>Single-responsibility principle</li>
+						<li>No magic numbers</li>
+						<li>Exposed inputs and outputs</li>
+						<li>Keep it basic (minimise dependencies)</li>
+						<li>Commentary in code</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Module submission | <i style="color:darkcyan">Documentation</i></h3>
+					
+					<div id="left50">
+						<i style="font-size: 90%;">Prepare documentation files</i>
+						<br>
+						<ul style="font-size: 80%;">
+							<li><i style="color:aquamarine">README.md</i>
+								<ul style="font-size: 80%;">
+									<li>Human readable free text presenting the module</li>
+									<li>Includes  title, author, version, etc.</li>
+									<li>Hyperlinks to documentation and demonstration materials</li>
+									<li>Is used in the generation of a module webpage (HTML)</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div id="right50">
+						<img src="images/2021-Romanowska-001_README.png" alt="README" style="width: 400px; border: none; box-shadow: none;"/>
+					</div>
+				</section>
+
+				<section>
+					<h3>Module submission | <i style="color:darkcyan">Documentation</i></h3>
+					
+					<div id="left50">
+						<i style="font-size: 90%;">Prepare documentation files</i>
+						<br>
+						<ul style="font-size: 80%;">
+							<li>Variable lists, diagrams, pseudocode</li>
+							<li>Screenshots</li>
+							<li>Demonstrations, tutorials</li>
+							<li>Additional documents<br>(e.g., ODD, if applicable)</li>
+						</ul>
+					</div>
+					<div id="right50">
+						<img src="images/2021-Romanowska-001_docs.png" alt="docs tbc" style="width: 400px; border: none; box-shadow: none;"/>
+					</div>
+				</section>
+
+				<section>
+					<div id="left50" style="text-align: right;">
+						<h4>Module submission | <i style="color:darkcyan">file structure</i></h4>
+						<img src="images/schema-minimum.png" alt="schema-min" style="width: 400px; border: none; box-shadow: none;"/>
+						<br>
+						<a href="https://github.com/Archaeology-ABM/NASSA-schema" target="_blank" style="font-size: 50%;">https://github.com/Archaeology-ABM/NASSA-schema</a>
+					</div>
+					<div id="right50" style="text-align: center;">
+						<img src="images/schema-maximum.png" alt="schema-max" style="width: 220px; border: none; box-shadow: none;"/>
+					</div>
+				</section>
+
+				<section>
+					<div id="left70">
+						<h4>Module submission | <i style="color:darkcyan">NASSA.yml</i></h4>
+						<ul style="font-size: 80%;">
+							<li>
+								Defines the module as a library item (metadata) and is used for generating webpage
+							</li>
+							<li>
+								Human- and machine-readable (YAML)
+							</li>
+							<li>
+								Module ID and title
+							</li>
+							<li>
+								Module type: algorithm or submodel<br>(whether it contains modules or not)
+							</li>
+							<li>
+								Authorship additive and role-specific
+							</li>
+							<li>
+								References (BibTex) grouped as module references and use cases
+							</li>
+						</ul>
+						<a href="https://github.com/Archaeology-ABM/NASSA-schema" target="_blank" style="font-size: 50%;">https://github.com/Archaeology-ABM/NASSA-schema</a>
+					</div>
+					<div id="right30">
+						<img src="images/2021-Romanowska-001_yml_top.png" alt="NASSA.yml print" style="width: 400px; border: none; box-shadow: none;"/>
+						<img src="images/2022-Angourakis-001_yml_top.png" alt="NASSA.yml print" style="width: 400px; border: none; box-shadow: none;"/>
+					</div>
+				</section>
+
+				<section>
+					<div id="left60">
+						<h4>Module submission | <i style="color:darkcyan">NASSA.yml</i></h4>
+						<ul style="font-size: 80%;">
+							<li>
+								Versioning and progressive development   
+							</li>
+							<li>
+								One-module, one-license
+							</li>
+							<li>
+								Semantic tags
+								<ul style="font-size: 80%;">
+									<li>programming</li>
+									<li>modelling</li>
+									<li>domain (subject, period, region)</li>
+								</ul>
+							</li>
+							<li>
+								Inputs and outputs 
+								<ul style="font-size: 80%;">
+									<li>name</li>
+									<li>type</li>
+									<li>unit</li>
+									<li>description</li>
+								</ul>
+							</li>
+						</ul>
+						<a href="https://github.com/Archaeology-ABM/NASSA-schema" target="_blank" style="font-size: 50%;">https://github.com/Archaeology-ABM/NASSA-schema</a>
+					</div>
+					<div id="right40">
+						<img src="images/2021-Romanowska-001_yml_bottom.png" alt="NASSA.yml print" style="width: 400px; border: none; box-shadow: none;"/>
+						<img src="images/2022-Angourakis-001_yml_bottom.png" alt="NASSA.yml print" style="width: 300px; border: none; box-shadow: none;"/>
+					</div>
+				</section>
+
+				<section>
+					<h3>Module submission | <i style="color:darkcyan">Validation</i></h3>
+					<div id="left50">
+						<ul style="font-size: 80%;">
+							<li>Download <i style="color:aquamarine">nassa-hs</i> (<a href="https://github.com/Archaeology-ABM/nassa-hs" target="_blank">https://github.com/Archaeology-ABM/nassa-hs</a>)</li>
+							<li>Run it on the local module directory</li>
+							<li>Correct, if not passing validation</li>
+						</ul>
+						<br>
+						<p style="font-size: 80%; text-align: center;">See instructions at nassa-hs repository</p>
+					</div>
+					<div id="right50">
+						<img src="images/nassa-hs-validation.png" alt="nassa-hs print" style="width: 400px; border: none; box-shadow: none;"/>
+						<br>
+						<p style="font-size: 50%; text-align: center;">
+							Otherwise,<br> 
+							another NASSA member/author<br>
+							may be available to perform the validation<br>
+							and submission in your behalf.
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<h3>Module submission | <i style="color:darkcyan">Publication</i></h3>
+					<div id="left60">
+						There are currently two options to submit a module:
+						<ul style="font-size: 80%;">
+							<li>Directly,<br>via a <i style="color:aquamarine">GitHub "pull request"</i></li>
+							<li>Indirectly,<br>sending files to NASSA members<br>(attachment or download link)</li>
+						</ul>
+					</div>
+					<div id="right40">
+						<img src="https://media2.giphy.com/media/l2JdY3sVk1PPw911C/giphy.gif?cid=ecf05e472ik09wj9r3jng29zydm4wdvlc6uzh21wa0ll9hah&rid=giphy.gif&ct=g" 
+						alt="submit" style="width: 400px; border: none; box-shadow: none;"/>
+					</div>
+				</section>
+				
+				<section>
+					<h3>Library <i style="color:darkcyan">Web interface</i></h3>
+					<img src="images/library-webpage.png" alt="library webpage" style="width: 800px; border: none; box-shadow: none;"/>
+					<br>
+					<a href="https://archaeology-abm.github.io/NASSA-modules" target="_blank">https://archaeology-abm.github.io/NASSA-modules</a>
+				</section>
+
+				<section>
+					<img src="images/NASSA-logo.png" alt="Logos" style="width: 600px; border: none; box-shadow: none;"/>
+					<br>
+					<i style="color:darkcyan; font-size: 66%;">Scientific Research Network (WOG) - FWO, 2020-2025</i>
+					<br>
+					<ul style="font-size: 66%;">
+						<li>NASSA GitHub organization: <a href="https://github.com/Archaeology-ABM" target="_blank">https://github.com/Archaeology-ABM</a></li>
+						<li>NASSA overview: <a href="https://archaeology-abm.github.io/NASA" target="_blank">https://archaeology-abm.github.io/NASA</a></li>
+						<li>Library repository: <a href="https://github.com/Archaeology-ABM/NASSA-modules" target="_blank">https://github.com/Archaeology-ABM/NASSA-modules</a></li>
+						<li>Library Web interface: <a href="https://archaeology-abm.github.io/NASSA-modules" target="_blank">https://archaeology-abm.github.io/NASSA-modules</a></li>
+						<li>For registered members: mailing list, Google Drive, Slack</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Acknowledgements</h3>
+					<p style="font-size: 80%">
+						Thanks to all NASSA members,
+						<br>
+						especially to 
+						<br>
+						<i style="color:aquamarine">Clemens Schmid</i> (Max Plank Institute for Geoanthropology)
+						<br>
+						who has made most presented here possible!
+					</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="reveal.js-master/dist/reveal.js"></script>
+        <script src="reveal.js-master/plugin/zoom/zoom.js"></script>
+		<script src="reveal.js-master/plugin/notes/notes.js"></script>
+		<script src="reveal.js-master/plugin/search/search.js"></script>
+		<script src="reveal.js-master/plugin/markdown/markdown.js"></script>
+		<script src="reveal.js-master/plugin/highlight/highlight.js"></script>
+
+		<script src="reveal.js-menu/menu.js"></script>
+		<script src="reveal.js-plugins/audio-slideshow/plugin.js"></script>
+		<script src="reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
+		<script src="reveal.js-plugins/audio-slideshow/recorder.js"></script>
+
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				mouseWheel: true,
+				slideNumber: 'c/t',
+/*
+				audio: {
+					prefix: 'audio/',
+					suffix: '.webm',
+					defaultDuration: 5,
+					textToSpeechURL: "http://api.voicerss.org/?key=f02cebf4e99c493d8a0048fde8a96278&hl=en-gb&c=ogg&src=",
+					advance: 0,
+					autoplay: false,
+					defaultNotes: false,
+					defaultText: false,
+					playerOpacity: 0.5
+				},
+
+				menu: { // Menu works best with font-awesome installed: sudo apt-get install fonts-font-awesome
+					themes: false,
+					transitions: false,
+					markers: true,
+					hideMissingTitles: true
+				},
+
+				keyboard: { 
+					82: function() { Recorder.toggleRecording(); },	// press 'r' to start/stop recording
+					90: function() { Recorder.downloadZip(); }, 	// press 'z' to download zip containing audio files
+					84: function() { Recorder.fetchTTS(); } 	// press 't' to fetch TTS audio files
+  				},
+*/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMenu
+					//,RevealAudioSlideshow, RevealAudioRecorder
+					]
+			});
+
+		</script>
+	</body>
+	<div id="background-header">
+		<div style="text-align:left; position:absolute; top:3%; left: 10%; font-size:100%; color:gray">
+			<i>CAA DE/NL/FL 2022<br>University of Cologne-Fritz Thyssen Stiftung</i>
+		</div>
+		<div style="text-align:left; position:absolute; top:3%; right: 10%; font-size:100%; color:gray">
+			<b>Angourakis et al.<br>5-7 October 2022</b>
+		</div>
+		<div style="text-align:right; position:absolute; top:9%; right: 10%; font-size:100%; color:gray">
+			<b><a style="color: darkcyan;" href="https://andros-spica.github.io/
+CAA-DE-NL-FL-Angourakis-et-al-2022/">https://andros-spica.github.io/
+CAA-DE-NL-FL-Angourakis-et-al-2022/</a></b>
+		</div>
+	</div>
+</html>
