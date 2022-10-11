@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/545572892.svg)](https://zenodo.org/badge/latestdoi/545572892)
+
 # NASSA’s open library of archaeological ABM modules: overview and examples
 Presentation for the session "Socio-ecological modelling" at the CAA DE/NL/FL 2022 Joint Chapter Meeting in Cologne (5-7 October 2022).
 
